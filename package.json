@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json.schemastore.org/package",
+  "name": "tmpl__typescript-application",
+  "version": "0.0.1",
+  "description": "Template for a Typescript application",
+  "private": true,
+  "author": "Dávid J. Zarándi",
+  "license": "BSD-3-Clause",
+  "engines": {
+    "node": ">=20.9.0",
+    "npm": ">=10.1.0"
+  },
+  "scripts": {
+    "build": "npm run clean && tsc",
+    "start": "node --env-file=.env dist/main.js",
+    "test": "npm run build && node --test dist/**/*.test.js",
+    "sonar": "sonarlint --src 'src/**/*.ts'",
+    "format": "prettier --write .",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^20.9.0",
+    "prettier": "^3.1.0",
+    "rimraf": "^5.0.5",
+    "sonarlint": "^1.1.0",
+    "typescript": "^5.2.2"
+  },
+  "keywords": [
+    "typescript",
+    "application",
+    "solarlint",
+    "prettier",
+    "rimraf"
+  ]
+}
