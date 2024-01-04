@@ -1,22 +1,13 @@
 {
   "$schema": "https://json.schemastore.org/package",
-  "name": "tmpl__typescript-application",
-  "version": "0.0.1",
-  "description": "Template for a Typescript application",
+  "name": "wksh__totaltypescript",
+  "description": "Collection of the TotalTypescript workshops",
   "private": true,
   "author": "Dávid J. Zarándi",
   "license": "BSD-3-Clause",
   "engines": {
     "node": ">=20.9.0",
     "npm": ">=10.1.0"
-  },
-  "scripts": {
-    "build": "npm run clean && tsc",
-    "start": "node --env-file=.env dist/main.js",
-    "test": "npm run build && node --test dist/**/*.test.js",
-    "sonar": "sonarlint --src 'src/**/*.ts'",
-    "format": "prettier --write .",
-    "clean": "rimraf dist"
   },
   "dependencies": {},
   "devDependencies": {
@@ -27,6 +18,7 @@
     "typescript": "^5.2.2"
   },
   "keywords": [
+    "workshop",
     "typescript",
     "application",
     "solarlint",
