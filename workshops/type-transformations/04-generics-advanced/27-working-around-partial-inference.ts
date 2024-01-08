@@ -32,7 +32,7 @@ const selectors = makeSelectors<Source>({
   getFirstNameLength: (source) => source.firstName.length,
 });
 
-type tests = [
+type _tests = [
   Expect<Equal<(typeof selectors)["getFullName"], (source: Source) => string>>,
   Expect<
     Equal<(typeof selectors)["getFirstAndLastName"], (source: Source) => string>

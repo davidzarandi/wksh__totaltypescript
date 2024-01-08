@@ -12,7 +12,7 @@ const numberResult = getValue(obj, "a");
 const stringResult = getValue(obj, "b");
 const booleanResult = getValue(obj, "c");
 
-type tests = [
+type _tests = [
   Expect<Equal<typeof numberResult, number>>,
   Expect<Equal<typeof stringResult, string>>,
   Expect<Equal<typeof booleanResult, boolean>>,

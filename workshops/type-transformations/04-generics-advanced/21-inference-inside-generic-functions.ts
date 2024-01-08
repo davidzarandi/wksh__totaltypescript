@@ -19,7 +19,7 @@ const date = remapPerson("birthdate", new Date());
 const num = remapPerson("age", 42);
 const name = remapPerson("name", "John Doe");
 
-type tests = [
+type _tests = [
   Expect<Equal<typeof date, Date>>,
   Expect<Equal<typeof num, number>>,
   Expect<Equal<typeof name, string>>,

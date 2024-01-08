@@ -51,5 +51,5 @@ it("Should let you clone the cache using a transform function", () => {
 
   assert.strictEqual(a, "1");
 
-  type tests = [Expect<Equal<typeof a, string | undefined>>];
+  type _tests = [Expect<Equal<typeof a, string | undefined>>];
 });

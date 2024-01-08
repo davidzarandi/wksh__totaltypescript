@@ -21,7 +21,7 @@ it("Should return an object which matches the types of each input", () => {
     v: 3,
   });
 
-  type test = [
+  type _tests = [
     Expect<Equal<typeof result, { t: number; u: number; v: number }>>,
   ];
 });

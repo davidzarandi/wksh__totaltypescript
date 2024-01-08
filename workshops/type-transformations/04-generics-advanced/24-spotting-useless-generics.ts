@@ -16,5 +16,5 @@ it("Should return a tuple of the properties a and b", () => {
 
   assert.deepStrictEqual(result, ["a", 1]);
 
-  type test1 = Expect<Equal<typeof result, [string, number]>>;
+  type _tests = [Expect<Equal<typeof result, [string, number]>>];
 });
