@@ -28,7 +28,7 @@ it("Should let you pass additional classes which get appended", () => {
 it("Should return a type of string", () => {
   const result = getBg("primary");
 
-  type test = Expect<Equal<typeof result, string>>;
+  type _tests = [Expect<Equal<typeof result, string>>];
 });
 
 it("Should not let you pass invalid variants", () => {

@@ -39,7 +39,7 @@ it("Should return the result with a { type: 'success' } on a successful call", (
     result: 1,
   });
 
-  type tests = [
+  type _tests = [
     Expect<
       Equal<
         typeof result,
@@ -71,7 +71,7 @@ it("Should return the error on a thrown call", () => {
     error: new Error("Oh dear"),
   });
 
-  type tests = [
+  type _tests = [
     Expect<
       Equal<
         typeof result,

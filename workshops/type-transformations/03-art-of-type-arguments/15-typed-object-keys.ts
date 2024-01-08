@@ -18,5 +18,5 @@ it("Should return the keys of the object", () => {
 
   assert.deepStrictEqual(result1, ["a", "b"]);
 
-  type test = Expect<Equal<typeof result1, Array<"a" | "b">>>;
+  type _tests = Expect<Equal<typeof result1, Array<"a" | "b">>>;
 });

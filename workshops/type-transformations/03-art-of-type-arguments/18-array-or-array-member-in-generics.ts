@@ -4,6 +4,6 @@ const makeStatus = <TStatuses extends string[]>(statuses: TStatuses) => {
 
 const statuses = makeStatus(["INFO", "DEBUG", "ERROR", "WARNING"]);
 
-type tests = [
+type _tests = [
   Expect<Equal<typeof statuses, Array<"INFO" | "DEBUG" | "ERROR" | "WARNING">>>,
 ];

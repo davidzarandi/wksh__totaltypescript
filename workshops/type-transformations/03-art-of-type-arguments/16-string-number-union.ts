@@ -7,7 +7,7 @@ export const inferItemLiteral = <T>(t: T) => {
 const result1 = inferItemLiteral("a");
 const result2 = inferItemLiteral(123);
 
-type tests = [
+type _tests = [
   Expect<Equal<typeof result1, { output: "a" }>>,
   Expect<Equal<typeof result2, { output: 123 }>>
 ];

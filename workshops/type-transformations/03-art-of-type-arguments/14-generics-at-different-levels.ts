@@ -37,7 +37,7 @@ describe("getHomePageFeatureFlags", () => {
       showLogOut: false,
     });
 
-    type tests = [
+    type _tests = [
       Expect<Equal<typeof flags, { showBanner: boolean; showLogOut: boolean }>>
     ];
   });
@@ -53,7 +53,7 @@ describe("getHomePageFeatureFlags", () => {
       showLogOut: false,
     });
 
-    type tests = [
+    type _tests = [
       Expect<Equal<typeof flags, { showBanner: boolean; showLogOut: boolean }>>
     ];
   });
