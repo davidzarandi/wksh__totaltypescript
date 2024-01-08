@@ -33,8 +33,8 @@ it("Should let you get and set to/from the cache", () => {
   cache.set("a", 1);
   cache.set("b", 2);
 
-  assert.deepStrictEqual(cache.get("a"), 1);
-  assert.deepStrictEqual(cache.get("b"), 2);
+  assert.strictEqual(cache.get("a"), 1);
+  assert.strictEqual(cache.get("b"), 2);
 });
 
 it("Should let you clone the cache using a transform function", () => {
@@ -49,7 +49,7 @@ it("Should let you clone the cache using a transform function", () => {
 
   const a = stringCache.get("a");
 
-  assert.deepStrictEqual(a, "1");
+  assert.strictEqual(a, "1");
 
   type tests = [Expect<Equal<typeof a, string | undefined>>];
 });

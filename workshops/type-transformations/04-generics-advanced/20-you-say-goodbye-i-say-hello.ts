@@ -10,7 +10,7 @@ it("Should return goodbye when hello is passed in", () => {
 
   type test = [Expect<Equal<typeof result, "goodbye">>];
 
-  assert.deepStrictEqual(result, "goodbye");
+  assert.strictEqual(result, "goodbye");
 });
 
 it("Should return hello when goodbye is passed in", () => {
@@ -18,5 +18,5 @@ it("Should return hello when goodbye is passed in", () => {
 
   type test = [Expect<Equal<typeof result, "hello">>];
 
-  assert.deepStrictEqual(result, "hello");
+  assert.strictEqual(result, "hello");
 });
