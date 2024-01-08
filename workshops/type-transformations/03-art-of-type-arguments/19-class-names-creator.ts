@@ -14,12 +14,12 @@ const getBg = createClassNamesFactory({
 });
 
 it("Should let you create classes from a className factory", () => {
-  assert.deepStrictEqual(getBg("primary"), "bg-blue-500");
-  assert.deepStrictEqual(getBg("secondary"), "bg-gray-500");
+  assert.strictEqual(getBg("primary"), "bg-blue-500");
+  assert.strictEqual(getBg("secondary"), "bg-gray-500");
 });
 
 it("Should let you pass additional classes which get appended", () => {
-  assert.deepStrictEqual(
+  assert.strictEqual(
     getBg("primary", "text-white", "rounded", "p-4"),
     "bg-blue-500 text-white rounded p-4"
   );
