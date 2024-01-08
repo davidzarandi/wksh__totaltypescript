@@ -40,7 +40,7 @@ it("Should return the correct privileges", () => {
   const userPrivileges = getRolePrivileges("user");
   const anonymousPrivileges = getRolePrivileges("anonymous");
 
-  type tests = [
+  type _tests = [
     Expect<Equal<typeof adminPrivileges, AdminPrivileges>>,
     Expect<Equal<typeof userPrivileges, UserPrivileges>>,
     Expect<Equal<typeof anonymousPrivileges, AnonymousPrivileges>>,

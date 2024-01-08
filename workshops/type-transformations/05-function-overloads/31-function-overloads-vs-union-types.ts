@@ -15,7 +15,7 @@ it("Should accept an object where the generator is a function", () => {
 
   assert.strictEqual(result, "hello");
 
-  type test1 = Expect<Equal<typeof result, string>>;
+  type _tests = [Expect<Equal<typeof result, string>>];
 });
 
 it("Should accept an object where the generator is a function", () => {
@@ -23,5 +23,5 @@ it("Should accept an object where the generator is a function", () => {
 
   assert.strictEqual(result, "hello");
 
-  type test1 = Expect<Equal<typeof result, string>>;
+  type _tests = [Expect<Equal<typeof result, string>>];
 });

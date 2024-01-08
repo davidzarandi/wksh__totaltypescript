@@ -8,4 +8,4 @@ const returnWhatIPassIn = (t: unknown) => {
 const one = returnWhatIPassIn(1);
 const matt = returnWhatIPassIn("matt");
 
-type tests = [Expect<Equal<typeof one, 1>>, Expect<Equal<typeof matt, "matt">>];
+type _tests = [Expect<Equal<typeof one, 1>>, Expect<Equal<typeof matt, "matt">>];

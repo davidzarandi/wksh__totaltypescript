@@ -22,7 +22,7 @@ it("Should return undefined if no initial data is passed", () => {
 
   const data = numData.getData();
 
-  type Test1 = Expect<Equal<typeof data, number | undefined>>;
+  type _tests = [Expect<Equal<typeof data, number | undefined>>];
 });
 
 it("Should NOT return undefined if initial data is passed", () => {
@@ -33,5 +33,5 @@ it("Should NOT return undefined if initial data is passed", () => {
 
   const data = numData.getData();
 
-  type Test1 = Expect<Equal<typeof data, number>>;
+  type _tests = [Expect<Equal<typeof data, number>>];
 });

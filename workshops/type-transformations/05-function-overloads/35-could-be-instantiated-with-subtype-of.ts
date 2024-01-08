@@ -15,7 +15,7 @@ const oneByDefault = getObjValue();
 const two = getObjValue("b");
 const three = getObjValue("c");
 
-type tests = [
+type _tests = [
   Expect<Equal<typeof one, 1>>,
   Expect<Equal<typeof oneByDefault, 1>>,
   Expect<Equal<typeof two, 2>>,

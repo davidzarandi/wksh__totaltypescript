@@ -7,7 +7,7 @@ const spanElement = document.querySelector("span");
  */
 const divElement2 = document.querySelector("div.foo");
 
-type tests = [
+type _tests = [
   Expect<Equal<typeof divElement, HTMLDivElement | null>>,
   Expect<Equal<typeof spanElement, HTMLSpanElement | null>>,
   Expect<Equal<typeof divElement2, HTMLDivElement | null>>

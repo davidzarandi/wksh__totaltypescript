@@ -10,7 +10,7 @@ function returnWhatIPassInExceptFor1(t: unknown): unknown {
 it("Should return the type 2 when you pass in 1", () => {
   const result = returnWhatIPassInExceptFor1(1);
 
-  type test1 = Expect<Equal<typeof result, 2>>;
+  type _tests = [Expect<Equal<typeof result, 2>>];
 });
 
 it("Otherwise, should return what you pass in", () => {
@@ -18,7 +18,7 @@ it("Otherwise, should return what you pass in", () => {
   const b = returnWhatIPassInExceptFor1("b");
   const c = returnWhatIPassInExceptFor1("c");
 
-  type tests = [
+  type _tests = [
     Expect<Equal<typeof a, "a">>,
     Expect<Equal<typeof b, "b">>,
     Expect<Equal<typeof c, "c">>
