@@ -1,6 +1,7 @@
 node_modules
-dist
 .git
 .idea
 .vscode
 .code
+*.js
+report.xml

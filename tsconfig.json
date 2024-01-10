@@ -1,8 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
-    "rootDir": "src",
-    "outDir": "dist",
+    "rootDir": "workshops",
     "strict": true,
     "target": "es2022",
     "module": "nodenext",
@@ -10,7 +9,7 @@
     "esModuleInterop": true,
     "moduleResolution": "nodenext",
     "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true,
+    "skipLibCheck": true
   },
   "exclude": ["node_modules"]
 }
